@@ -221,7 +221,6 @@ p.deskripsi {
 }
 .program-card-content {
   width: 65%;
-
   float: left;
   margin-left: 5%;
 }
@@ -231,7 +230,6 @@ p.deskripsi {
   position: relative;
   padding: 1%;
   height: 160px;
-  margin-bottom: 5%;
 }
 .program-card-detail .icon {
   background-color: rgba(255, 255, 255, 0.5);
@@ -289,14 +287,14 @@ p.deskripsi {
 .kegiatan-card span {
   background-color: var(--secondary);
   display: block;
-  width: 50px;
-  height: 80px;
+  width: 60px;
+  height: 90px;
   float: left;
   color: white;
-  font-size: 1rem;
-  line-height: 17px;
+  font-size: 0.9rem;
+  line-height: 20px;
   text-align: center;
-  padding: 25px 5px;
+  padding: 15px 5px;
   margin-right: 20px;
 }
 .kegiatan h3 {
@@ -321,7 +319,7 @@ p.deskripsi {
   color: white;
   text-shadow: 1px 1px 3px #aaa;
 }
-.pengajar p.deskripsi {
+.pengajar p.deskripsi2 {
   margin-bottom: 2rem;
   color: white;
   text-align: center;
@@ -345,7 +343,7 @@ p.deskripsi {
 .galeri h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 1rem;
 }
 .galeri p.deskripsi2 {
   margin-bottom: 2rem;
@@ -378,12 +376,12 @@ p.deskripsi {
 .testimonial h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 1rem;
 }
 .testimonial p {
   text-align: center;
-  font-size: 1.2rem;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 /* Kontak Section */
 .kontak {
@@ -392,7 +390,7 @@ p.deskripsi {
 .kontak h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 1rem;
 }
 
 .kontak-maps {
@@ -537,14 +535,18 @@ footer a {
 /* Mobile */
 @media (max-width: 450px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
   }
   .about,
   .program,
+  .program-card h2,
   .galeri,
   .program-card-inner,
-  .kontak {
-    padding: 5% 10%;
+  .kontak,
+  .pengajar-inner,
+  .kegiatan,
+  .testimonial {
+    padding: 5% 7%;
   }
   .program-card-content {
     margin-left: 0;
@@ -591,6 +593,31 @@ footer a {
   }
   .kegiatan-card {
     margin-bottom: 80px;
+  }
+  .kegiatan-card img {
+    margin-bottom: 10px;
+  }
+  .kegiatan-card span {
+    background-color: var(--secondary);
+    display: block;
+    width: 50px;
+    height: 70px;
+    float: left;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 15px;
+    text-align: center;
+    padding: 15px 5px;
+    margin-right: 20px;
+  }
+  .kegiatan h3 {
+    margin-top: 10px;
+  }
+  .kegiatan-card p {
+    font-size: 0.8rem;
+  }
+  .galeri-inner {
+    gap: 0;
   }
   .pengajar {
     background-image: url("img/bg-pengajar.jpg");

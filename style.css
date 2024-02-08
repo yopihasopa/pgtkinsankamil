@@ -41,16 +41,19 @@ i.lni {
 }
 
 .navbar .navbar-logo {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-top: -20px;
-  padding: 15px 0;
+  position: relative;
 }
-#navbar-logo-img {
-  width: 50px;
-  margin-right: 15px;
-  margin-bottom: -15px;
+.navbar .navbar-logo .navbar-logo-img {
+  height: 50px;
+}
+.navbar .navbar-logo .logo-text {
+  position: absolute;
+  font-weight: 500;
+  color: #ffffff;
+  width: 200px;
+  margin-left: 15px;
+  line-height: 50px;
+  font-size: 1.2rem;
 }
 .navbar .navbar-nav a {
   color: #ffffff;
@@ -539,6 +542,12 @@ footer a {
 @media (max-width: 450px) {
   html {
     font-size: 80%;
+  }
+  .navbar {
+    padding: 0 7%;
+  }
+  .navbar .navbar-logo {
+    padding: 7px 0 4px;
   }
   .about,
   .program,

@@ -550,6 +550,9 @@ footer a {
   .navbar .navbar-logo {
     padding: 7px 0 4px;
   }
+  .navbar .navbar-logo .logo-text {
+    width: 200px;
+  }
   .about,
   .program,
   .program-card h2,

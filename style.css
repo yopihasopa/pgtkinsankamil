@@ -34,12 +34,40 @@ i.lni {
   padding: 1.4rem 7%;
   background-color: #0374ac;
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   right: 0;
   z-index: 9999;
 }
+.info {
+  background-color: var(--secondary);
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  text-align: center;
+  line-height: 40px;
+}
+.info:hover {
+  text-decoration: underline;
+}
+.info-text {
+  color: #000;
+}
+.pulse {
+  animation: pulse-animation 1s infinite;
+}
 
+@keyframes pulse-animation {
+  0% {
+    color: rgba(0, 0, 0, 1);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
 .navbar .navbar-logo {
   position: relative;
 }
@@ -456,6 +484,12 @@ footer .credit p {
 }
 footer a {
   color: var(--secondary);
+}
+.ppdb img {
+  max-width: 800px;
+  width: 100%;
+  padding: 4%;
+  margin-top: 110px;
 }
 /* Media Queries */
 /* Desktop */

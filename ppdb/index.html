@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG & TK Insan Kamil - Kab. Bandung Barat</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://pgtkinsankamil.blogspot.com/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="../ppdb"
+      ><div class="info">
+        <span class="info-text pulse">>></span> Info Penerimaan Peserta Didik
+        Baru 2024/2025
+        <span class="info-text pulse"><<</span>
+      </div></a
+    >
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="../"
+          ><img class="navbar-logo-img" src="../img/logo-pgtkinsankamil.png" />
+          <span class="logo-text">PG & TK INSAN KAMIL</span></a
+        >
+      </div>
+
+      <div class="navbar-nav">
+        <a href="../">Home</a>
+        <a href="../#about">Tentang</a>
+        <a href="../#program-card">Program</a>
+        <a href="../#kegiatan">Kegiatan</a>
+        <a href="../#galeri">Galeri</a>
+        <a href="../#kontak">Kontak</a>
+        <a
+          href="../ppdb"
+          style="
+            background-color: var(--primary);
+            color: #fff;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding: 15px 20px 10px;
+          "
+          >Info PPDB</a
+        >
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i class="lni lni-menu"></i></a>
+      </div>
+    </nav>
+    <section class="ppdb">
+      <center><img src="../img/ppdb.jpeg" alt="" /></center>
+    </section>
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/pgtkinsankamilofficial"
+          ><i class="lni lni-instagram-original"></i
+        ></a>
+        <a href="https://api.whatsapp.com/send/?phone=6285222061828"
+          ><i class="lni lni lni-whatsapp"></i
+        ></a>
+        <a href="mailto:zaidaninsankamil@gmail.com"
+          ><i class="lni lni-envelope"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="../">Home</a>
+        <a href="../#about">Tentang</a>
+        <a href="../#program">Program</a>
+      </div>
+      <div class="credit">
+        <p>
+          &#169; 2024 PG & TK Insan Kamil<br />Puri Indah Cihampelas Blok i1 No.
+          27 Kab. Bandung Barat<br />Made with &#10084;&#65039; in Bandung.
+          Created by
+          <a href="https://yopihasopa.github.io/scrodigital/">Scrödigital.</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script>
+      // Toggle class active
+      const navbarNav = document.querySelector(".navbar-nav");
+      // Ketika Hamburger Menu di klik
+      document.querySelector("#hamburger-menu").onclick = () => {
+        navbarNav.classList.toggle("active");
+      };
+
+      // Klik di luar sidebar untuk menghilangkan nav
+      const hamburger = document.querySelector("#hamburger-menu");
+      document.addEventListener("click", function (e) {
+        if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+          navbarNav.classList.remove("active");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1500, mirror: false, easing: "ease", offset: 225 });
+    </script>
+  </body>
+</html>

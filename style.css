@@ -49,6 +49,7 @@ i.lni {
   z-index: 9999;
   text-align: center;
   line-height: 40px;
+  color: #000;
 }
 .info:hover {
   text-decoration: underline;

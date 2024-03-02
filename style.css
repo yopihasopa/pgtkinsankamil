@@ -466,7 +466,7 @@ footer {
   background-color: var(--primary);
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 0 5rem;
 }
 footer .socials,
 footer .links,
@@ -486,7 +486,7 @@ footer .credit p {
 footer a {
   color: var(--secondary);
 }
-footer .wa-chat-floating {
+.wa-chat-floating {
   position: fixed;
   bottom: 30px;
   right: 50px;
@@ -716,11 +716,11 @@ footer .wa-chat-floating {
   .pengajar-inner h2 {
     padding-top: 30px;
   }
-  footer .wa-chat-floating {
+  .wa-chat-floating {
     bottom: 10px;
     right: 20px;
   }
-  footer .wa-chat-floating img {
+  .wa-chat-floating img {
     width: 60px;
   }
 }

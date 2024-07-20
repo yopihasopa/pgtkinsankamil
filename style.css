@@ -308,13 +308,16 @@ a.cta {
 }
 .kegiatan-inner {
   display: flex;
-  gap: 5%;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .kegiatan-card {
-  flex: 1;
   background-color: white;
   position: relative;
+  width: 300px;
 }
 .kegiatan-card img {
   width: 100%;
@@ -671,11 +674,9 @@ footer a {
   .program-img-mobile {
     display: block;
   }
-  .kegiatan-inner {
-    display: block;
-  }
   .kegiatan-card {
     margin-bottom: 80px;
+    width: 100%;
   }
   .kegiatan-card img {
     margin-bottom: 10px;
@@ -699,7 +700,8 @@ footer a {
   .kegiatan-card p {
     font-size: 0.8rem;
   }
-  .galeri-inner {
+  .galeri-inner,
+  .kegiatan-inner {
     gap: 0;
   }
   .pengajar {
